@@ -37,11 +37,10 @@ class RekeningTabungan extends AkunBank {
     }
 
     void tampilRincian() {
-        // pemilik dan bank bisa diakses karena protected/public
         System.out.println("Rekening Tabungan milik " + pemilik + " di " + bank);
         System.out.println("Bunga tahunan: " + bunga + "%");
         System.out.println("Saldo saat ini: Rp" + getSaldo());
-        // saldo tidak bisa langsung diakses (karena private di superclass)
+        
     }
 }
 
